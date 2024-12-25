@@ -10,10 +10,10 @@ let number = 4; //decimal number to be converted to binary
 function decimal_to_binary(decimal) {
     let potency = Math.log2(decimal); //Gets the potency of the number
     let binary = "0";
-    switch (potency) {
-        case 0:
-            break;
+    for (let i = 0; i == potency; i++) {
+        
     }
+
     return binary;
 }
 
