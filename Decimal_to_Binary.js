@@ -11,7 +11,12 @@ function decimal_to_binary(decimal) {
     let potency = Math.log2(decimal); //Gets the potency of the number
     let binary = "0";
     for (let i = 0; i == potency; i++) {
-        
+        if (decimal % 2 == 0){
+
+        }
+        else{
+
+        }
     }
 
     return binary;
