@@ -9,16 +9,18 @@ Math.PI; // calling the library of math
 let number = 4; //decimal number to be converted to binary
 function decimal_to_binary(decimal) {
     let potency = Math.log2(decimal); //Gets the potency of the number
-    let binary = "0";
-    for (let i = 0; i == potency; i++) {
-        if (decimal % 2 == 0){
-
+    let binary;
+    let i = potency;
+    do {
+        if (decimal / Math.pow(2, potency) == 1) {
+            binary = "1";
         }
-        else{
-
+        else {
+            binary = binary + "0";
         }
+        i--;
     }
-
+    while (i == 0)
     return binary;
 }
 
