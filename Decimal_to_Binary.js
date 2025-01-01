@@ -12,15 +12,15 @@ function decimal_to_binary(decimal) {
     let binary;
     let i = potency;
     do {
-        if (decimal / Math.pow(2, potency) == 1) {
+        if (decimal % Math.pow(2, potency) == 0) {
             binary = "1";
         }
         else {
-            binary = binary + "0";
+            binary = binary + "1";
         }
         i--;
     }
-    while (i == 0)
+    while (i > 0)
     return binary;
 }
 
