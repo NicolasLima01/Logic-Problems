@@ -3,8 +3,8 @@
 // 
 // This algorithm convert hour to second
 //--------------------------------------------------------------------------------------------------
-let hours;
+let hours = setHours(1, 10, 0, 0);
 let seconds;
-function convertHourToSecond(){
+function convertHourToSecond(hours){
     
 }
