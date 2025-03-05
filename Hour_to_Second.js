@@ -3,7 +3,8 @@
 // 
 // This algorithm convert hour to second
 //--------------------------------------------------------------------------------------------------
-const timestamp = new Date("2022-10-10 11:05:00");
+
+const timestamp = new Date();
 let time = ("HH:MM:SS");
 
 function convertHourToSecond(time){
@@ -16,4 +17,5 @@ function convertHourToSecond(time){
     return totalSeconds;
 }
 
+console.log("The exact hours, minutes and seconds converted below:");
 console.log(convertHourToSecond(timestamp));
